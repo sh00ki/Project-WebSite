@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<!--------------this website created by the authors:---------------------------->
+<!------------------Yoad Shiran   ID: 302978713--------------------------------->
+<!------------------Elya Bar-on   ID: 200553790--------------------------------->
+<!------------------Lior Sapir    ID: 304916562--------------------------------->
+<!------------------------------------------------------------------------------>
+
+<head>
+    <meta charset="utf-8"><!--this line is giving enconding to the website(kidod)-->
+
+    <!--main title-->
+    <title>Pshychometric Site</title>
+
+    <!--scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/gameScript.js"></script>
+    <script src="js/traningScript.js"></script>
+    <script src="js/game2.js"></script>
+    <!--End of scripts-->
+
+    <!--css style files-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/trainingStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/game2.css">
+    <link rel="stylesheet" type="text/css" href="css/help.css">
+    <!--End of css files-->
+</head>
+<body>
+
+    <nav class="navbar">
+        <!--nav bar-->
+        <ul>
+            <li><a id="loginBtn">Login</a></li>
+            <li><a id="trainBtn">Learn Words</a></li>
+            <li><a id="gameBtn">Test Yourself </a></li>
+            <li><a id="game2Btn">Sliding Words</a></li>
+            <li><a id="statsBtn">My Statistics</a></li>
+            <li><a id="helpBtn">Help</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="loginPage">
+        <!--this part of the page is for the olgin and register -->
+        <h2 id="loginText">LOGIN</h2>
+        <div class = "login">
+
+            <!--handle the register-->
+            <div id = "register">
+                <form>
+                    <!--fields to fill in signup-->
+                    <h2 class="logHeader">SignUp</h2>
+                    Enter First Name:
+                    <br>
+                    <input type = "text" id = "reg_firstname">
+                    <br>
+                    Enter Last Name:
+                    <br>
+                    <input type = "text" id = "reg_lastname">
+                    <br>
+                    Enter user name:
+                    <br>
+                    <input type = "text" id = "reg_username">
+                    <br>
+                    Enter password:
+                    <br>
+                    <input type = "password" id = "reg_password">
+                    <br>
+                    <!--end of fields to fill-->
+                    <input type="button" id="reg_submit" value="Submit">
+
+                </form>
+            </div>
+            <!--handle the sign in-->
+            <div id = "signin">
+                <form>
+                    <h2 class="logHeader">SignIn</h2>
+                    <br>
+                    Enter user name:
+                    <br>
+                    <input type = "text" id = "signin_username">
+                    <br>
+                    Enter password:<br>
+                    <input type = "password" id = "signin_password">
+                    <br>
+                    <input type="button" id="signin_submit" value="Submit">
+                </form>
+            </div>
+            <!--<input type="button" id="test" value="view users">-->
+        </div>
+    </div>
+
+    <div id="gamePage">
+        <!--this is for touch and validaition of the array that holds the words-->
+         <br><div id = "YourWordIs"><h1>YOUR WORD:</h1></div>
+        <span>
+            <!-- start_generate_word    is the id that you click on it and it pop out message with word-->
+            <a id="start_generate_word" >
+
+                <button id="gameStartBTN" type="button">START NOW</button>
+            </a>
+        </span>
+
+
+        <!--this is where the answers supposed to be-->
+        <div id="inputTextOfWord"></div><br>
+
+
+        <!--those divs are the optional answers-->
+        <!--now you can choose what answer is correct-->
+        <form action="">
+            <div id="answer_text">Press the START button above to begin - GOOD LUCK!</div>
+            <div><input type="radio" name="gender" id="inputTextOfWordAns1" >
+                <input type="text" id="textans1" disabled>
+            </div>
+            <br>
+
+            <div><input type="radio" name="gender" id="inputTextOfWordAns2">
+                <input type="text" id="textans2"  disabled>
+            </div><br>
+
+            <div><input type="radio" name="gender" id="inputTextOfWordAns3">
+                <input type="text" id="textans3" disabled>
+            </div><br>
+
+            <div><input type="radio" name="gender" id="inputTextOfWordAns4">
+                <input type="text" id="textans4" disabled>
+            </div><br>
+
+            <div><input type="radio" name="gender" id="inputTextOfWordAns5">
+                <input type="text" id="textans5" disabled>
+            </div><br>
+
+        </form>
+        <span>
+        <!-- start_generate_word    is the id that you click on it and it pop out message with word-->
+        <a id="next_generate_word" >
+            <button id="gameNextBTN"  type="button">הבא</button>
+        </a>
+        </span>
+
+        <span>
+        <!-- finish the game-->
+        <a id="finish_generate_word" >
+            <button type="button" id="btn_finish">סיום</button>
+        </a>
+        </span>
+
+
+            <br>
+        <br>
+        <p id="timer">Every question is 20 seconds</p>
+        <!-- count the true and false answers -->
+            <div id="gameAnsCounters">
+                <div class="buttonBarGameTrue" id="buttonBarGameTrue">
+                    <h2>Total true Answer</h2>
+                    <p id="countTrueAnswers">
+                        <input type="text" id="textTrueAnswers" disabled>
+                    </p>
+                </div>
+                <div class="buttonBarGameFalse" id="buttonBarGameFalse">
+                    <h2>Total false Answer</h2>
+                    <p id="countFalseAnswers">
+                        <input type="text" id="textFalseAnswers" disabled>
+                    </p>
+                </div>
+
+            </div>
+    </div>
+    <div id="trainingPage">
+        <div class = "fieldsetSection">
+            <!----this field set is for the DIFFICULT words---->
+            <br>
+            <fieldset id="showDifficultWords">
+
+                <div id="pressStartTraning"> לחץ על כפתור START </div><br>
+            </fieldset>
+
+            <p/><br>
+
+            <!----this field set is for the MEANINGS of the words---->
+            <fieldset id="showMeaningWords">
+                <div id="pressStartTraning1"> לחץ על כפתור START </div><br>
+            </fieldset>
+        </div>
+
+        <div id = "traningButtonsSection">
+            <button id="slowTheTimer" class="Tgame">Slower</button>
+            <button class="Tgame" id="stopAndResumeTheTimer">Start</button>
+            <button class="Tgame" id="fasterTheTimer">Faster</button>
+        </div>
+        <div id="timer2"></div>
+    </div>
+
+    <!--this part in index is for the statistics page-->
+    <div id="statsPage">
+        <!--now for every element in page-->
+        <h2 id="myNameStats"></h2>
+        <br>
+        <div id="statisticsDiv">
+            <h2 id="wrongAnsStat"></h2>
+            <br>
+            <h2 id="rightAnsStat"></h2>
+            <br>
+            <h2 id="totalTimeStat"></h2>
+            <br>
+            <h2 id="timeForAns"></h2>
+        </div>
+
+    </div>
+    <!--this part of  the page is for the sliding word page-->
+    <div class="gameWindow" id="gameWindow">
+        <!--for the start written word-->
+        <div id="optionWords">
+            <h2 id="wordGame2">Press Start to begin</h2>
+            <h2 id="wordGame3"></h2>
+        </div>
+        <!--eace runnig words-->
+        <div id="questionWord">
+            <h2 class="g2ans"  id="ans1Game2">Word1</h2>
+            <h2 class="g2ans"  id="ans2Game2">Word2</h2>
+            <h2 class="g2ans"  id="ans3Game2">Word3</h2>
+            <h2 class="g2ans"  id="ans4Game2">Word4</h2>
+            <h2 class="g2ans"  id="ans5Game2">Word5</h2>
+        </div>
+        <!--the button for stert the game-->
+        <div id="game2Buttons">
+            <button type="button" id="startBtnGame2">Start</button>
+        </div>
+
+
+    </div>
+
+    <div id="help">
+        <!--help page instructions-->
+        <h2 id="helpTitle">ההתמצאות באתר</h2>
+        <div id="helpContainer">
+            <h2>זהו אתר תרגול והכנה למילים הקשות בעברית הנמצאות במבחן הפסיכומטרי</h2>
+            <h2>ניתן להרשם לאתר באמצעות משתמש חדש או להשאר על משתמש ברירת מחדל admin admin</h2>
+            <h2>בכל מצב בו לא יכנס משתמש חדש, המשתמש הראשון המוגדר ברשימה יתחבר אוטומטית כברירת מחדל מטעמי נוחות</h2>
+            <h2>Learn Words - יאפשר למשתמש ללמוד מילים ופירושן על מנת לתרגל את הזכרון</h2>
+            <h2>Test Yourself - יאפשר לתרגל את המילים בשאלון טריוויה אשר ישמור את הנתונים הסטטיסטיים של התשובות</h2>
+            <h2>Sliding Words - משחק שונה אשר גם מתרגל מילים ושומר סטטיסטיקות</h2>
+            <h2>My Statistics - מאפשר לראות את משך הזמן וכמות השאלות שנענו עבור המשתמש הרשום</h2>
+            <h2>בהצלחה וגלישה מהנה באתר!!!</h2>
+        </div>
+    </div>
+
+
+
+    <!--the ready function in javascript file to start all the magic-->
+    <script>
+        $( document ).ready(function() {
+            loadPage();
+            loadPage2();
+            console.log( "document loaded" );
+        });
+    </script>
+</body>
+
+<footer>
+    <br>
+    <br>
+    Copyrights: ELYA-LIOR-YOAD TM
+</footer>
+
+</html>

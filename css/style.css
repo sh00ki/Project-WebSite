@@ -1,0 +1,84 @@
+/*color palette*/
+/* #252839 #677077 #b5b5b7 #f2b632 */
+body{
+    position: relative;
+    /*background-color: #677077;*/
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer {
+    font-size: small;
+    color: snow;
+    font-family: "Oswald", "Helvetica Newe", Helvetica, sans-serif;
+    text-align: center;
+}
+/*-----------Nav bar colors---------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #252839;*/
+    font-family: Impact;
+
+    font-size: xx-large;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #f2b632;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #677077;
+}
+
+/*-----------Nav bar colors END!---------*/
+
+.container{
+    background-color: #677077;
+    height : 100%;
+    color: #252839;
+
+}
+
+/*----------------------questions part----------*/
+textarea {
+    background-color: transparent;
+    border: 0px solid;
+    test-size: 50px;
+    height: 12px;
+    width: 360px;
+}
+
+
+/*design of the statistics page*/
+#statsPage{
+    margin-top: 50px;
+    background-image: url(../img/forTraningPage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    color: black;
+    font-family: Impact;
+    font-size: x-large;
+    font-weight: normal;
+    background-color: #252839;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 9px solid #f2b632;
+    height: 640px;
+}

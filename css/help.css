@@ -1,0 +1,14 @@
+
+/*  for hebraw fix the direction*/
+#helpContainer{
+    direction: rtl;
+    /*background-color: white;*/
+
+}
+
+/*for the title*/
+#helpTitle {
+    font-size: xx-large;
+
+}
+

@@ -1,0 +1,292 @@
+/*//<!--------------this website created by the authors:---------------------------->*/
+/*//<!------------------Yoad Shiran   ID: 302978713--------------------------------->*/
+/*//<!------------------Elya Bar-on   ID: 200553790--------------------------------->*/
+/*//<!------------------Lior Sapir    ID: 304916562--------------------------------->*/
+/*//<!------------------------------------------------------------------------------>*/
+
+/*----------------------questions part----------*/
+#gamePage{
+    width: 100%;
+    text-align: center;
+}
+/*add id 2 button*/
+
+/*add id 2 button*/
+#gameNextBTN{
+    width: 10%;
+}
+#answer_text{
+    display: block;
+    width: 90%;
+/*    margin-right: 70%;*/
+}
+#textTrueAnswers{
+    width: 10%;
+    background: transparent;
+    border: none;
+}
+#textFalseAnswers{
+    width: 10%;
+    background: transparent;
+    border: none;
+}
+#YourWordIs h1{
+    font:normal 30pt Arial;
+    color:#FFFFFF;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+#textans1 {
+    background-color: #f2b632;
+     -moz-border-radius-topright: 30px;
+    -webkit-border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    direction: rtl;
+    border: 1px solid #848484;
+    outline:0;
+    height:50px;
+    width: 375px;
+    padding-right:15px;
+    padding-left:15px;
+    font-size: 15px;
+}
+#textans2 {
+    background-color: #f2b632;
+     -moz-border-radius-topright: 30px;
+    -webkit-border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    direction: rtl;
+    border: 1px solid #848484;
+    outline:0;
+    height:50px;
+    width: 375px;
+    padding-right:15px;
+    padding-left:15px;
+    font-size: 15px;
+}
+#textans3 {
+    background-color: #f2b632;
+     -moz-border-radius-topright: 30px;
+    -webkit-border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    direction: rtl;
+    border: 1px solid #848484;
+    outline:0;
+    height:50px;
+    width: 375px;
+    padding-right:15px;
+    padding-left:15px;
+    font-size: 15px;
+}
+#textans4 {
+    background-color: #f2b632;
+     -moz-border-radius-topright: 30px;
+    -webkit-border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    direction: rtl;
+    border: 1px solid #848484;
+    outline:0;
+    height:50px;
+    width: 375px;
+    padding-right:15px;
+    padding-left:15px;
+    font-size: 15px;
+}
+#textans5 {
+    background-color: #f2b632;
+
+     -moz-border-radius-topright: 30px;
+    -webkit-border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    direction: rtl;
+    border: 1px solid #848484;
+    outline:0;
+    height:50px;
+    width: 375px;
+    padding-right:15px;
+    padding-left:15px;
+    font-size: 15px;
+}
+#inputTextOfWord {
+    font-size: 25px;
+    margin-left: 28%;
+    margin-right: 25%;
+    color: rgb(242, 181, 50);
+    font-size: 50px;
+    /*background-color: rgb(103, 112, 119);*/
+    text-shadow: rgb(71, 71, 71) 3px 5px 2px;
+}
+
+#gameStartBTN {
+    background-color: #252839;
+    color: #f2b632;
+    font-family: Impact;
+    border-radius: 22px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-size: large;
+
+}
+#gameNextBTN {
+    background-color: #252839;
+    color: #f2b632;
+    padding: 14px 50px 15px 45px;
+    margin: 2px 10px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: large;
+
+    text-align: center;
+    
+}
+
+#btn_finish {
+    background-color: #252839;
+    color: #f2b632;
+    padding: 14px 50px 15px 35px;
+    margin: 2px 10px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: large;
+
+    text-align: center;
+}
+
+#answer_text{
+    background-color:#252839;
+    font-family: Impact;
+    display: inline-block;
+/*    font-size-adjust: auto;*/
+    padding: 1%;
+    color: #f2b632;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #848484;
+
+}
+
+/*add <div class="buttonBarGame">*/
+.buttonBarGame{
+   
+    display: inline-table;
+}
+span h2 {
+     color: black;
+font-size: 25px;
+/*background-color: rgb(120, 120, 120);*/
+text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+    text-align: center;
+}
+
+#textans1{
+    font-weight: bold;
+}
+#textans2{
+    font-weight: bold;
+}
+#textans3{
+    font-weight: bold;
+}
+#textans4{
+    font-weight: bold;
+}
+#textans5{
+    font-weight: bold;
+}
+
+#gameAnsCounters{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer{
+    background-color:#252839;
+    font-family: Impact;
+    display: inline-block;
+    /*    font-size-adjust: auto;*/
+    padding: 2%;
+    color: #f2b632;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #848484;
+}
+#buttonBarGameTrue{
+    /*background: #252839;*/
+    padding-right:   10px;
+     padding-left:   10px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-color: #f2b632;
+    color: greenyellow;
+    font-weight: 800;
+    font-style: oblique;
+    font-variant: small-caps;
+    float:left;
+}
+#buttonBarGameFalse{
+    /*background: #252839;*/
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-color: #f2b632;
+    padding-left:   10px;
+    padding-right:   10px;
+    float:left;
+    color: red;
+     font-weight: 800;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+/*----------------------questions part END!----------*/
+
+/*------Radio Buttons Design  -------*/
+
+input[type=radio] {
+    transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -o-transform: scale(2.5);
+}
+
+/*---------------------END---------------------------*/

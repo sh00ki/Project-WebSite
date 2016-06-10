@@ -1,0 +1,108 @@
+/*//<!--------------this website created by the authors:---------------------------->*/
+/*//<!------------------Yoad Shiran   ID: 302978713--------------------------------->*/
+/*//<!------------------Elya Bar-on   ID: 200553790--------------------------------->*/
+/*//<!------------------Lior Sapir    ID: 304916562--------------------------------->*/
+/*//<!------------------------------------------------------------------------------>*/
+
+/*this is the fieldset design
+where thewords and thier meanings are inside*/
+/* #252839 #677077 #b5b5b7 #f2b632 */
+/*this is for the upper that present the hard word*/
+#showDifficultWords {
+    background-image: url("../img/forTraningPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 17px;
+    width: 85%;
+    display: block;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 3.0em;
+    border: 15px solid #f2b632;
+    height: 130px;
+}
+/*this is for the lower that present the meaning word*/
+#showMeaningWords {
+    background-image: url("../img/forTraningPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 17px;
+    display: block;
+    direction: rtl;
+    width: 85%;
+    font-weight: bold;
+    font-size: 3.0em;
+    border: 15px solid #f2b632;
+    height: 130px;
+}
+/*the buttons design*/
+#pressStartTraning {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#pressStartTraning1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#traningButtonsSection {
+    width: 30%;
+    margin: auto;
+    border-radius: 30px;
+/*    display: inline-block;*/
+    padding: 50px;
+    margin-left: 32%;
+    margin-right: 25%;
+
+}
+/*the cover of buttons */
+.Tgame {
+    width: 100%;
+    background-color: #252839;
+    color: #f2b632;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*the middle button*/
+#stopAndResumeTheTimer{
+    font-weight: bold;
+    background-color: #f2b632;
+    border-radius: 6px;
+    color: #252839;
+}
+/*the background cover of the buttom*/
+.Tgame:hover {
+    background-color: #45a049;
+}
+#stopAndResumeTheTimer:hover{
+    background-color: #45a049;
+}
+/*the timer of speed text*/
+#timer2 {
+    font-family: "Cambria Math";
+    font-size: xx-large;
+    text-align: center;
+    color: #f2b632;
+}
+
+#traningButtonsSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}

@@ -1,0 +1,67 @@
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signin{
+    margin: 20px;
+}
+
+#register{
+    margin: 20px;
+}
+#loginText{
+    font-family: Impact;
+    color:#f2b632;
+    font-size: 40px;
+}
+.logHeader{
+    font-family: Impact;
+    color:#f2b632;
+    font-size: 30px;
+}
+#register{
+    font-family: Impact;
+}
+#signin{
+    font-family: Impact;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f2b632;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f2b632;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #252839;
+    color: #f2b632;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
